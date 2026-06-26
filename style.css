@@ -520,10 +520,64 @@ footer .logo span{color:#888;}
 .service-main-card p{color:var(--text-mute);font-size:0.9rem;margin-bottom:20px;}
 .service-main-card .link-arrow{color:var(--text-main);font-size:0.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
 
+/* Stats Section */
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  text-align:center;
+}
+.stat-number{
+  font-size:3.5rem;
+  color:var(--text-main);
+  margin-bottom:8px;
+}
+.stat-label{
+  font-size:0.85rem;
+  font-weight:700;
+  color:var(--text-mute);
+  letter-spacing:2px;
+}
+
+/* Services Split */
+.services-split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  margin-top:40px;
+}
+.split-title{
+  font-size:1.1rem;
+  color:var(--text-main);
+  margin-bottom:24px;
+  border-bottom:1px solid var(--border-light);
+  padding-bottom:12px;
+}
+.numbered-list{
+  list-style-type:decimal-leading-zero;
+  padding-left:24px;
+  color:var(--text-mute);
+  font-size:1.05rem;
+  line-height:2;
+}
+.numbered-list li{
+  color:var(--text-main);
+  padding-left:8px;
+  margin-bottom:8px;
+  border-bottom:1px solid rgba(20,20,20,0.05);
+}
+.featured-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
 /* Responsive */
 @media(max-width:900px){
   .grid-3{grid-template-columns:1fr;}
   .grid-4{grid-template-columns:repeat(2,1fr);}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .services-split{grid-template-columns:1fr;}
   .grid-services{grid-template-columns:1fr;}
   .grid-gallery{grid-template-columns:repeat(2,1fr);}
   .contact-wrap{grid-template-columns:1fr;}
